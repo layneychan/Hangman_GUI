@@ -71,8 +71,7 @@ public class GameLogic
 
     public void UpdateStageImage(int stage)
     {
-        ImageIcon img = new ImageIcon("C:/Users/z00502xz/IdeaProjects/Hangman_GUI/images/man/stage" + stage + ".png"); //fix later
-        //ImageIcon img = new ImageIcon("../../images/man/stage" + stage + ".png");
+        ImageIcon img = new ImageIcon("images/man/stage" + stage + ".png");
         Image scaledImg = img.getImage().getScaledInstance(250, 250, Image.SCALE_SMOOTH);
         img = new ImageIcon(scaledImg);
         ui.getStageImage().setIcon(img);
@@ -127,15 +126,4 @@ public class GameLogic
         }
         return sb.toString();
     }
-
-
-    /*public char[] getClosedWord()
-    {
-        return closedWord;
-    }
-
-    public void setClosedWord(char[] closedWord)
-    {
-        this.closedWord = closedWord;
-    }*/
 }
